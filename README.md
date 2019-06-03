@@ -8,7 +8,7 @@ Currently the DWIN LCD firmware project is based on 1.60.3, but those can be eas
 
 __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 
-## Required steps to recreated the missing files
+## Required steps to recreate the missing files
 
 - Extract the Screen firmware to a new directory
 - Copy the firmware/CR10sPro_1.60.3/DWprj.hmi at the same level where the DWIN_SET is.
