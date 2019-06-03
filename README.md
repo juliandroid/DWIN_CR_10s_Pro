@@ -25,6 +25,16 @@ __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 - Save, Generate, Export.
     You can export settings, project and generate the missing TFT directory.
 
+## Missing artefacts
+
+The exported files currently does not generate the following artefacts (which are present in the original firmware):
+- T5OS_V20_NOACK.BIN (those might be tue to the flag inside the project file)
+- T5UID1.CFG
+- T5UID1.CFG.bak
+- T5UID1_V22.BIN
+
+- 0_DWIN_ASC.HZK  (font file, normally should be added via DGUS tool)
+
 ## Open questions
 
 - Make sure the DWprj.hmi is correctly recreated, including the INIT section
