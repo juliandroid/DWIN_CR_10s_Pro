@@ -8,7 +8,7 @@ Currently the DWIN LCD firmware project is based on 1.60.3, but those can be eas
 
 __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 
-## Required steps to recreated the missing files
+## Required steps to recreate the missing files
 
 - Extract the Screen firmware to a new directory
 - Copy the firmware/CR10sPro_1.60.3/DWprj.hmi at the same level where the DWIN_SET is.
@@ -24,6 +24,16 @@ __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 - Now going from image (page) to image (page) you can see both touch and display fields. To select only Touch or Display variables, you have to select that from the select menu on the right (top-right) panel. You can modify those field by using the same properties panel on the right.
 - Save, Generate, Export.
     You can export settings, project and generate the missing TFT directory.
+
+## Missing artefacts
+
+The exported files currently does not generate the following artefacts (which are present in the original firmware):
+- T5OS_V20_NOACK.BIN (those might be tue to the flag inside the project file)
+- T5UID1.CFG
+- T5UID1.CFG.bak
+- T5UID1_V22.BIN
+
+- 0_DWIN_ASC.HZK  (font file, normally should be added via DGUS tool)
 
 ## Open questions
 
