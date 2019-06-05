@@ -14,12 +14,12 @@ __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 - ~Copy CONFIG.txt from [firmware/CR10sPro_1.60.8/DWIN_SET/CONFIG.txt](firmware/CR10sPro_1.60.8/DWIN_SET/CONFIG.txt) at the same directory.
     This file was also manually reacreated and might contain wrong parameters. More information about those configuration options you can read form "2.2 DGUS Parameter Configuration", tools/EN_DWIN DGUS Display Development Guide_V4.3.pdf~
     
-    ~Another help might come from the demo projects provided by DWIN: tools/Demo Projects T5LASIC_DGUSII_Part1.zip and tools/Demo Projects T5LASIC_DGUSII_Part2.zip~
+    ~Another help might come from the demo projects provided by DWIN: [tools/Demo Projects T5LASIC_DGUSII_Part1.zip](tools/Demo%20Projects%20T5LASIC_DGUSII_Part1.zip) and [tools/Demo Projects T5LASIC_DGUSII_Part2.zip](tools/Demo%20Projects%20T5LASIC_DGUSII_Part2.zip)~
     
-    Edited: This file might not be needed/used. The original firmware comes with T5UID1.CFG ("T5UID1.CFG is hardware configuration file for T5UID1 platform. T5UID1 is binary, it can be edit by UltraEdit.") - see tools/T5UID1 Application Guide.pdf
+    Edited: This file might not be needed/used. The original firmware comes with T5UID1.CFG ("T5UID1.CFG is hardware configuration file for T5UID1 platform. T5UID1 is binary, it can be edit by UltraEdit.") - see [tools/T5UID1 Application Guide.pdf](tools/T5UID1%20Application%20Guide.pdf)
     
     However setting wrong configuration options might break the communication between the motherboard (printer) and the LCD screen (like header, enabling checksum or baudrate).
-- Extract tools/DGUS_V7383.rar (you need Windows machine) and run the DGUS Tool V7.383.exe
+- Extract [tools/DGUS_V7383.rar](tools/DGUS_V7383.rar) (you need Windows machine) and run the DGUS Tool V7.383.exe
 - Switch the language to English (menu on the top, right "Settings" in Chinese and then from the select menu pick English). Also from the Settings menu -> Set resolution to 480X272.
 - Create a New project, select screen resoluton "480X272" (if it is not pre-selected), next pick a directory where you want to store the project. Save.
 - Now, copy the entire DWIN_SET from the official screen firmware to the directory for the project you've just created (i.e. overwrite the "empty" DWIN_SET directory of the project)
