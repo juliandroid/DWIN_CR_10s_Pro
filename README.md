@@ -4,7 +4,7 @@ This project aims to recreate missing project file and configuration options nee
 
 <img align="top" width=175 src="images/dwin_lcd.jpg" />
 
-Currently the DWIN LCD firmware project is based on [1.60.8 CR-10SPRO Screen firmware.rar](tools/1.60.8 CR-10SPRO Screen firmware.rar) (part of latest 1.60.9 motherboard firmware), but those can be easiliy updated to the latest version.
+Currently the DWIN LCD firmware project is based on [1.60.8 CR-10SPRO Screen firmware.rar](tools/1.60.8%20CR-10SPRO%20Screen%20firmware.rar) (part of latest 1.60.9 motherboard firmware), but those can be easiliy updated to the latest version.
 
 __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 
