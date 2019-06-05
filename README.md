@@ -12,9 +12,9 @@ __EXPERIMENTAL!!! NOT SAFE FOR UPDATE!!!__
 
 - Extract the official screen firmware to a temp directory
 - ~Copy CONFIG.txt from firmware/CR10sPro_1.60.8/DWIN_SET/CONFIG.txt at the same directory.
-    This file was also manually reacreated and might contain wrong parameters. More information about those configuration options you can read form "2.2 DGUS Parameter Configuration", tools/EN_DWIN DGUS Display Development Guide_V4.3.pdf
+    This file was also manually reacreated and might contain wrong parameters. More information about those configuration options you can read form "2.2 DGUS Parameter Configuration", tools/EN_DWIN DGUS Display Development Guide_V4.3.pdf~
     
-    Another help might come from the demo projects provided by DWIN: tools/Demo Projects T5LASIC_DGUSII_Part1.zip and tools/Demo Projects T5LASIC_DGUSII_Part2.zip~
+    ~Another help might come from the demo projects provided by DWIN: tools/Demo Projects T5LASIC_DGUSII_Part1.zip and tools/Demo Projects T5LASIC_DGUSII_Part2.zip~
     
     Edited: This file might not be needed/used. The original firmware comes with T5UID1.CFG ("T5UID1.CFG is hardware configuration file for T5UID1 platform. T5UID1 is binary, it can be edit by UltraEdit.") - see tools/T5UID1 Application Guide.pdf
     
