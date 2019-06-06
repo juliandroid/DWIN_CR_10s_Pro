@@ -18,9 +18,8 @@ Currently, I have tested it on my own printer (version 1.60.3) and it seems work
     
     ~Another help might come from the demo projects provided by DWIN: [tools/Demo Projects T5LASIC_DGUSII_Part1.zip](tools/Demo%20Projects%20T5LASIC_DGUSII_Part1.zip) and [tools/Demo Projects T5LASIC_DGUSII_Part2.zip](tools/Demo%20Projects%20T5LASIC_DGUSII_Part2.zip)~
     
-    Edited: This file might not be needed/used. The original firmware comes with T5UID1.CFG ("T5UID1.CFG is hardware configuration file for T5UID1 platform. T5UID1 is binary, it can be edit by UltraEdit.") - see [tools/T5UID1 Application Guide.pdf](tools/T5UID1%20Application%20Guide.pdf)
-    
-    However setting wrong configuration options might break the communication between the motherboard (printer) and the LCD screen (like header, enabling checksum or baudrate).
+    Edited: This file has been replaced by T5UID1.CFG ("T5UID1.CFG is hardware configuration file for T5UID1 platform. T5UID1 is binary, it can be edit by UltraEdit.") - see [tools/T5UID1 Application Guide.pdf](tools/T5UID1%20Application%20Guide.pdf)
+
 - Extract [tools/DGUS_V7383.rar](tools/DGUS_V7383.rar) (you need Windows machine) and run the DGUS Tool V7.383.exe
 - Switch the language to English (menu on the top, right "Settings" in Chinese and then from the select menu pick English). Also from the Settings menu -> Set resolution to 480X272.
 - Create a New project, select screen resoluton "480X272" (if it is not pre-selected), next pick a directory where you want to store the project. Save.
@@ -45,7 +44,6 @@ The following artefacts are of unknown origin to me (but are present in the orig
 ## Open questions
 
 - Make sure the DWprj.hmi is correctly recreated (i.e. not missing something from the INIT section)
-- Confirm that the CONFIG.txt is not needed (i.e. that the T5UID1.CFG is the equivalent one)
 - Visually inspect that each page/image that is correctly linked to correct page/image (like Back button goes to correct page/image). That is especially importatant for the the SP (Stack pointer, default setting is 0xFFFF (set by Config. file)) and VP (Variable pointer, 0x0000-0x6FFF. Write 0x0000 for the variables that do not need address assigning. The command will be disabled when the high byte is 0xFF). See "4.4 VP & SP" section of the tools/EN_DGUS V5.10 User Guide.pdf
 - Currently some(many) of the Return Key Codes, does not specify "Page switching" (i.e. page to switch is -1, but the page switching is NOT disabled). This might be correct behaviour if this sends codes via serial interface to the motherboard and then the MB to switch page "manually". That has to be verified. An example for this behaviour is page 61 (use Display manu -> Preview from current page to test). However pages like 34 works fine.
 
