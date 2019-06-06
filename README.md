@@ -10,6 +10,10 @@ __ATTENTION: ALFA VERSION! MIGHT NOT WORK WELL! USE ON YOUR OWN RISK!__
 
 Currently, I have tested it on my own printer (version 1.60.3, see Pro_V1.60.3 branch) and it seems working well!
 
+## Difference in master branch
+
+- Currently, no modifications to the stock 1.60.8 Screen firmware
+
 ## Required steps to recreate the missing files
 
 - Extract the official screen firmware to a temp directory
