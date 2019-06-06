@@ -13,7 +13,7 @@ Currently, I have tested it on my own printer (version 1.60.3) and it seems work
 ## Difference in 1.60.3 branch
 
 - I have updated the 19_C_NozzleHotbet.bmp and 61_E_NozzleHotbet.bmp to visually denote the change of the maximum temperatures.
-- I have udpated, via the DGUS GUI the "Touch layer" for page 19 and 61, to increate the heatbed and hotend to 130C and 300C respectivelly.
+- I have udpated, via the DGUS GUI the "Touch layer" for page 19 and 61, to increase the heatbed and hotend to 130C and 300C respectivelly.
 
 ## Required steps to recreate the missing files
 
