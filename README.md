@@ -47,6 +47,10 @@ The following artefacts are of unknown origin to me (but are present in the orig
 - Visually inspect that each page/image that is correctly linked to correct page/image (like Back button goes to correct page/image). That is especially importatant for the the SP (Stack pointer, default setting is 0xFFFF (set by Config. file)) and VP (Variable pointer, 0x0000-0x6FFF. Write 0x0000 for the variables that do not need address assigning. The command will be disabled when the high byte is 0xFF). See "4.4 VP & SP" section of the tools/EN_DGUS V5.10 User Guide.pdf
 - Currently some(many) of the Return Key Codes, does not specify "Page switching" (i.e. page to switch is -1, but the page switching is NOT disabled). This might be correct behaviour if this sends codes via serial interface to the motherboard and then the MB to switch page "manually". That has to be verified. An example for this behaviour is page 61 (use Display manu -> Preview from current page to test). However pages like 34 works fine.
 
+*Edit*: As suspected, looking at the Marlin source, "Return Key Code" is available through serial interface. For example RTS_HandleData() and the check "Addrbuf[i] == NzBdSet" sets "Checkkey = ManualSetTemp", which in return in "case ManualSetTemp:" can switch the page number like this: "RTS_SndData(ExchangePageBase + 16, ExchangepageAddr); //exchange to 16 page, the fans off"
+
+Thus, with relative certainty it seems that the pages are imported correctly!
+
 ## Contribution
 
 Any contribution to the project is welcome. From verifying the project and configuration files, filling-in the gaps or fixing bugs to testing in on spare DWIN LCD screen (DMT48270C043_06WT (T5UID1)). Once this project is confirmed to properly work on real hardware we can start using it to add extra features or at least fixing bugs.
