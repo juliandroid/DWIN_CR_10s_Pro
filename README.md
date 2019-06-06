@@ -45,6 +45,8 @@ The following artefacts are of unknown origin to me (but are present in the orig
 - T5UID1_V22.BIN - "The GUI core program" - might be an update sent by DWIN
 - 0_DWIN_ASC.HZK  (font file, normally should be added via DGUS tool). Currently just copy/paste from/to DWIN_SET
 
+Make sure that those files (available in the original firmware) exists also inside your DWIN_SET directory that you are going to upload on your printer.
+
 ## Open questions
 
 - Make sure the DWprj.hmi is correctly recreated (i.e. not missing something from the INIT section)
