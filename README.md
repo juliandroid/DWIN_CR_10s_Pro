@@ -46,7 +46,11 @@ The following artefacts are of unknown origin to me (but are present in the orig
 - T5UID1_V22.BIN - "The GUI core program" - might be an update sent by DWIN
 - 0_DWIN_ASC.HZK  (font file, normally should be added via DGUS tool). Currently just copy/paste from/to DWIN_SET
 
-Make sure that those files (available in the original firmware) exists also inside your DWIN_SET directory that you are going to upload on your printer.
+    Make sure that those files (available in the original firmware) exists also inside your DWIN_SET directory that you are going to upload on your printer.
+
+    Edit: 0_DWIN_ASC.HZK could be generated via "0# word bank generating" link on the Welcome page inside DGUS tool. You can pick another font and generate HZK file. This will go inside the DGUS tool directory. Copy the file and overwrite the one inside your DWIN_SET.
+
+    ICO files can be generated via "DWIN ICO generation" tool from the Welcome page. To "decompile" an existing ICO, just find a page that uses the ICO file and preselect the Minimum and Maximum (ICON ID), by clicking on the "+" button - you'll see an Icon preview. The DGUS tool will extract and create a directory on the same level where your DWIN_SET is. For example "68_AutoLeve" with all BMP images inside.
 
 ## Open questions
 
